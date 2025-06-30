@@ -1,25 +1,36 @@
+<!--
+Welecome to the source code of "India COVID-19 Tracker"!
+
+This website was made while vibe coding with ChatGPT. It made the website in like 2 minutes. I had to do very little modification to this (ie: Add the github actions folder. 
+
+Feel free to contact me at: contact@lakshyasinghchauhan.com
+Source code: https://github.com/lakshyaelite/covid-tracker
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>India COVID-19 Tracker</title>
+  <!-- stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>India COVID-19 Tracker</h1>
+  <!-- Dark mode toggle switch -->
   <button id="toggle-theme">🌙 Toggle Dark Mode</button>
-
+  <!-- Container for the cards -->
   <div class="container">
     <div class="card" id="cases">🟠 Active Cases: ...</div>
     <div class="card" id="deaths">💀 Deaths: ...</div>
     <div class="card" id="recovered">
     💚 Estimated Recovered: <span id="recovered-count">...</span>
-    <span class="tooltip-icon" title="This is calculated as: total cases − active cases − deaths.">ℹ️</span>
+    <span class="tooltip-icon" title="This is calculated as: total cases − active cases − deaths.(although it does not work and shows zero at the moment)">ℹ️</span>
     </div>
     <div class="card" id="updated">📅 Last Updated: ...</div>
   </div>
-
+  <!-- Javascript -->
   <script src="script.js"></script>
 </body>
 </html>
